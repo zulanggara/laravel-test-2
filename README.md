@@ -9,4 +9,3 @@ There are seven branch tests to be done.
 - [File Upload](https://github.com/julie-grace/laravel-test/tree/laravel-file-upload)
 - [Migrations](https://github.com/julie-grace/laravel-test/tree/laravel-migrations)
 - [Routes](https://github.com/julie-grace/laravel-test/tree/laravel-routes)
-- [Validation](https://github.com/julie-grace/laravel-test/tree/laravel-validation)
