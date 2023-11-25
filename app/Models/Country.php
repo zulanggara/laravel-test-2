@@ -11,8 +11,15 @@ class Country extends Model
 
     protected $fillable = ['name'];
 
+    // protected $appends = ['avg_size_team'];
+
     public function teams()
     {
         return $this->hasMany(Team::class);
     }
+
+    // public function getTeamsAvgSizeAttribute()
+    // {
+    //     return $this->teams->average('size');
+    // }
 }
