@@ -18,6 +18,9 @@ class EventServiceProvider extends ServiceProvider
         Registered::class => [
             SendEmailVerificationNotification::class,
         ],
+        'eloquent.created: App\Models\Project' => [
+            'App\Observers\ProjectObserver@created',
+        ],
     ];
 
     /**
