@@ -10,9 +10,9 @@ class OfficeController extends Controller
     public function store(Request $request)
     {
         $filename = $request->file('photo')->getClientOriginalName();
-
         // TASK: Upload the file "photo" so it would be written as
         //   storage/app/public/offices/[original_filename]
+        $filePath = $request->file('photo')->storeAs('public/offices', $filename);
 
         Office::create([
             'name' => $request->name,
@@ -26,5 +26,4 @@ class OfficeController extends Controller
     {
         return view('offices.show', compact('office'));
     }
-
 }
